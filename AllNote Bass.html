@@ -254,10 +254,10 @@
 
 <body>
 <ul>
-	<li><a class="navbarlogo" href="H:\Tech Inno\Webpages\AllNote Homepage.html"><img src="H:\Tech Inno\Webpages\images\AllNote_Logo_BG.png" width="110" alt="AllNote Logo"></a></li>
-	<li><a class="navbuttons" href="H:\Tech Inno\Webpages\AllNote Instruments.html">Instruments</a></li>
-	<li><a class="navbuttons" href="H:\Tech Inno\Webpages\AllNote About.html">About</a></li>
-	<li><img class="navbarswirl" src="H:\Tech Inno\Webpages\images\AllNote_Swirl.png" height="61px"></li>
+	<li><a class="navbarlogo" href="AllNote Homepage.html"><img src="AllNote_Logo_BG.png" width="110" alt="AllNote Logo"></a></li>
+	<li><a class="navbuttons" href="AllNote Instruments.html">Instruments</a></li>
+	<li><a class="navbuttons" href="AllNote About.html">About</a></li>
+	<li><img class="navbarswirl" src="AllNote_Swirl.png" height="61px"></li>
 </ul>
 <br>
 <h2>Bass Clarinet</h2>
@@ -273,7 +273,7 @@
 
 
 <div class="center">
-	<img class="fingering" id="changeImage" src="H:\Tech Inno\Webpages\fingerings\BC_1.png" height="400px">
+	<img class="fingering" id="changeImage" src="BC_1.png" height="400px">
 
 	<div class="slidecontainer" id="slidecontainer">
 		<input type="range" min="1" max="41" value="1" class="slider" id="myRange">
@@ -306,7 +306,7 @@
 <div class="downbuttondiv center"><button type="button" class="arrowbutton" id="down"><div class="downarrow"></div></button></div>	
 
 
-<div class="notepadding center"><img class="fingering" id="noteImage" src="H:\Tech Inno\Webpages\notes\BC_1.png" width="250px"></div>
+<div class="notepadding center"><img class="fingering" id="noteImage" src="BC_1.png" width="250px"></div>
 
 <p id="notename"> E Flat / D Sharp </p>
 <p id="register"> Chalumeau </p>
@@ -325,14 +325,14 @@
 	var altdown = document.getElementById("altdown");
 	var altclick = "";
 	var alt = "_";
-	var source = "H:/Tech Inno/Webpages/Fingerings/BC_1_2.png";
+	var source = "BC_1_2.png";
 	var sourceTrue = "";
 	
 	altup.onclick = function(){
 		
 		altclick++;
 		alt = "_" + altclick;
-		image = "H:/Tech Inno/Webpages/Fingerings/BC_"+(slider.value)+(alt)+".png";
+		image = "BC_"+(slider.value)+(alt)+".png";
 
 		checkIfImageExists(image, (exists) => {
       			if (exists) {
@@ -341,7 +341,7 @@
       			} else {
 				altclick = "";
 				alt = "_" + altclick;
-				image = "H:/Tech Inno/Webpages/Fingerings/BC_"+(slider.value)+".png";
+				image = "BC_"+(slider.value)+".png";
 				changeImage.src=image;
       			}
     		});
@@ -430,7 +430,7 @@
 				alt = "";
 			}
 			console.log(alt);
-			changeImage.src="H:/Tech Inno/Webpages/Fingerings/BC_"+(slider.value)+(alt)+".png";
+			changeImage.src="BC_"+(slider.value)+(alt)+".png";
 		}
 	}
 	
@@ -439,8 +439,8 @@
 			container++;
   		}
 		slider.value = container;
-		changeImage.src="H:/Tech Inno/Webpages/Fingerings/BC_"+(slider.value)+".png";
-  		noteImage.src="H:/Tech Inno/Webpages/Notes/BC_"+(slider.value)+".png";
+		changeImage.src="BC_"+(slider.value)+".png";
+  		noteImage.src="BC_"+(slider.value)+".png";
 		registerName();
 		nameOfNote();
 	}
@@ -450,15 +450,15 @@
 			container--;
   		}
 		slider.value = container;
-		changeImage.src="H:/Tech Inno/Webpages/Fingerings/BC_"+(slider.value)+".png";
-  		noteImage.src="H:/Tech Inno/Webpages/Notes/BC_"+(slider.value)+".png";
+		changeImage.src="BC_"+(slider.value)+".png";
+  		noteImage.src="BC_"+(slider.value)+".png";
 		registerName();
 		nameOfNote();
 	}
 
 	slider.oninput = function() {
-  		changeImage.src="H:/Tech Inno/Webpages/Fingerings/BC_"+(slider.value)+".png";
-  		noteImage.src="H:/Tech Inno/Webpages/Notes/BC_"+(slider.value)+".png";
+  		changeImage.src="BC_"+(slider.value)+".png";
+  		noteImage.src="BC_"+(slider.value)+".png";
   		container = slider.value;
   		registerName();
 		nameOfNote();
