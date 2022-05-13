@@ -1,0 +1,514 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bass Clarinet Fingerings</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+<style>
+	body {
+		font-family: "Lato", sans-serif;
+		--pink: #ef3c64;
+		--orange: #fdb515;
+		--gray: #e5e7e7;
+		--darkgray: #cfcfcf;
+		margin: 0px;
+		padding: 0px;
+	}
+	.navbarlogo {
+		background-color: #e5e7e7;
+		padding: 0px 0px 0px 0px;
+	}
+	.navbarswirl {
+		background-color: #e5e7e7;
+		padding: 0px 0px 0px 0px;
+	}
+	ul {
+		list-style-type: none;
+		margin: 0;
+		padding: 0px;
+		overflow: hidden;
+		background-color: var(--pink);
+	}
+	li {
+		float: left;
+	}
+	.navbuttons {
+		display: block;
+		padding: 23px 20px 23px 20px;
+		text-decoration: none;
+		color: black;
+		font-weight: 400;
+	}
+	.navbuttons:link {
+		background-color: var(--gray);
+	}
+	.navbuttons:hover {
+		background-color: var(--pink);
+	}
+	.navbuttons:active {
+		background-color: var(--orange);
+	}
+
+
+	h2 {
+		text-align: center;
+		
+	}
+	
+	.fingering {
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+		padding-right: 60px;
+	}
+
+
+
+	.slidecontainer {
+  		width: 100%;
+
+	}
+
+	.slider {
+  		-webkit-appearance: none;
+  		width: 500px;
+  		height: 5px;
+  		border-radius: 0px;
+  		background: black;
+  		outline: none;
+  		opacity: 1;
+		
+		transform: rotate(-90deg);
+		position: relative;
+		bottom: 150px;
+		margin-right: -300px; 
+	}
+	.center {
+		text-align: center;
+
+	}
+
+	.slider::-webkit-slider-thumb {
+  		-webkit-appearance: none;
+  		appearance: none;
+  		width: 24px;
+  		height: 24px;
+  		border-radius: 50%;
+  		background: var(--orange);
+  		cursor: pointer;
+		
+		outline-color: black;
+		outline-style: solid;
+		outline-width: 5px;
+	}
+
+	.slider::-moz-range-thumb {
+  		width: 25px;
+  		height: 25px;
+  		border-radius: 0%;
+  		background: var(--pink);
+  		cursor: pointer;
+	}
+
+	.hiddentick {
+		
+		width: 50%;
+		height: 5px;
+		float: left;
+		padding-right: 20px;
+
+	}
+	.tick {
+		background-color: black;
+		width: 20px;
+		height: 5px;
+		float: left;
+		margin-left: 121px;
+	}
+	.tickcontainer1 {
+		padding: 0px;
+		width: 95%;
+		margin-right: auto;
+		margin-left: auto;
+		margin-top: -410px;
+	}
+	.tickcontainer2 {
+		padding: 0px;
+		width: 95%;
+		margin-right: auto;
+		margin-left: auto;
+		margin-top: 85px;
+	}
+	.tickcontainer3 {
+		padding: 0px;
+		width: 95%;
+		margin-right: auto;
+		margin-left: auto;
+		margin-top: 252px;
+	}
+	.tickcontainer4 {
+		padding: 0px;
+		width: 95%;
+		margin-right: auto;
+		margin-left: auto;
+		margin-top: 310px;
+		margin-bottom: 200px;
+	}
+	.tickcontainer5 {
+		padding: 0px;
+		width: 95%;
+		margin-right: auto;
+		margin-left: auto;
+		top: 188px;
+		position: relative;
+	}
+	#register {
+		text-align: center;
+		font-weight: 700;
+		padding-right: 60px;
+	}
+	#notename {
+		text-align: center;
+		font-weight: 700;
+		padding-right: 60px;
+	}
+	.notepadding {
+		padding-top: 75px;
+	}
+	.uparrow {
+		width: 0; 
+  		height: 0; 
+  		border-left: 12px solid transparent;
+  		border-right: 12px solid transparent;
+  		border-bottom: 20px solid var(--pink);
+		
+		position: relative;
+  		
+		margin-bottom: 0px;
+
+	}
+	.downarrow {
+		width: 0; 
+  		height: 0; 
+  		border-left: 12px solid transparent;
+  		border-right: 12px solid transparent;
+  		border-top: 20px solid var(--pink);
+
+		position: relative;
+  		
+		margin-bottom: 0px;
+	}
+	
+	.upbuttondiv {
+		position: relative;
+
+		left: 151px;
+
+	}
+	.downbuttondiv {
+		position: relative;
+
+		left: 151px;
+		top: 191px;
+
+	}
+	.arrowbutton {
+		border: 0px solid transparent;
+		padding: 0px;
+		background-color: transparent;
+	}
+	.uparrow:active {
+		border-bottom: 20px solid var(--orange);
+
+	}
+	.downarrow:active {
+		border-top: 20px solid var(--orange);
+
+	}
+	
+	#alternate {
+		text-align: center;
+		position: relative;
+		left: 45px;
+		top: 305px;
+		font-weight: 700;
+		margin-bottom: -75px;
+	}
+	.altup {
+		position: relative;
+		top: 305px;
+		left: 45px;
+		margin-bottom: -25px;
+	}
+	.altdown {
+		position: relative;
+		top: 400px;
+		left: 45px;
+		margin-bottom: -25px;
+	}
+</style>
+</head>
+
+<body>
+<ul>
+	<li><a class="navbarlogo" href="H:\Tech Inno\Webpages\AllNote Homepage.html"><img src="H:\Tech Inno\Webpages\images\AllNote_Logo_BG.png" width="110" alt="AllNote Logo"></a></li>
+	<li><a class="navbuttons" href="H:\Tech Inno\Webpages\AllNote Instruments.html">Instruments</a></li>
+	<li><a class="navbuttons" href="H:\Tech Inno\Webpages\AllNote About.html">About</a></li>
+	<li><img class="navbarswirl" src="H:\Tech Inno\Webpages\images\AllNote_Swirl.png" height="61px"></li>
+</ul>
+<br>
+<h2>Bass Clarinet</h2>
+<br>
+
+
+<p id="alternate"> Alternate <br> Fingering </p>
+<div class="altup center"><button type="button" class="arrowbutton" id="altup"><div class="uparrow"></div></button></div>
+<div class="altdown center"><button type="button" class="arrowbutton" id="altdown"><div class="downarrow"></div></button></div>
+
+<div class="upbuttondiv center"><button type="button" class="arrowbutton" id="up"><div class="uparrow"></div></button></div>
+
+
+
+<div class="center">
+	<img class="fingering" id="changeImage" src="H:\Tech Inno\Webpages\fingerings\BC_1.png" height="400px">
+
+	<div class="slidecontainer" id="slidecontainer">
+		<input type="range" min="1" max="41" value="1" class="slider" id="myRange">
+		<!-- <p>Note # <span id="demo"></span></p> -->
+		<div class="tickcontainer1">
+			<div class="hiddentick"></div>
+			<div class="tick"></div>
+		</div>
+		<div class="tickcontainer2">
+			<div class="hiddentick"></div>
+			<div class="tick"></div>
+		</div>
+		<div class="tickcontainer3">
+			<div class="hiddentick"></div>
+			<div class="tick"></div>
+		</div>
+		<div class="tickcontainer4">
+			<div class="hiddentick"></div>
+			<div class="tick"></div>
+		</div>
+		<div class="tickcontainer5">
+			<div class="hiddentick"></div>
+			<div class="tick"></div>
+		</div>
+	</div>
+	
+	
+</div>
+<br>
+<div class="downbuttondiv center"><button type="button" class="arrowbutton" id="down"><div class="downarrow"></div></button></div>	
+
+
+<div class="notepadding center"><img class="fingering" id="noteImage" src="H:\Tech Inno\Webpages\notes\BC_1.png" width="250px"></div>
+
+<p id="notename"> E Flat / D Sharp </p>
+<p id="register"> Chalumeau </p>
+
+
+
+
+<script>
+	var slider = document.getElementById("myRange");
+	var register = document.getElementById("register");
+	var noteName = document.getElementById("notename");
+	var container = slider.value;
+	var upArrow = document.getElementById("up");
+	var downArrow = document.getElementById("down");
+	var altup = document.getElementById("altup");
+	var altdown = document.getElementById("altdown");
+	var altclick = "";
+	var alt = "_";
+	var source = "H:/Tech Inno/Webpages/Fingerings/BC_1_2.png";
+	var sourceTrue = "";
+	
+	altup.onclick = function(){
+		
+		altclick++;
+		alt = "_" + altclick;
+		image = "H:/Tech Inno/Webpages/Fingerings/BC_"+(slider.value)+(alt)+".png";
+
+		checkIfImageExists(image, (exists) => {
+      			if (exists) {
+				changeImage.src=image;
+
+      			} else {
+				altclick = "";
+				alt = "_" + altclick;
+				image = "H:/Tech Inno/Webpages/Fingerings/BC_"+(slider.value)+".png";
+				changeImage.src=image;
+      			}
+    		});
+
+		console.log(alt);	
+
+	}
+	
+	function checkIfImageExists(url, callback) {
+  		const img = new Image();
+  		img.src = url;
+  
+  		if (img.complete) {
+    			callback(true);
+  		} else {
+    			img.onload = () => {
+      			callback(true);
+    		};
+    			img.onerror = () => {
+      			callback(false);
+    			};
+  		}
+}
+
+	
+	function registerName(){
+		if (container >= 35) {
+			register.innerHTML = "Altissimo";
+  		}
+  		if (container < 35 && container >=  21) {
+			register.innerHTML = "Clarion";
+  		}
+  		if (container < 21 && container >=  16) {
+			register.innerHTML = "Throat Tones";
+ 		}
+  		if (container < 16) {
+			register.innerHTML = "Chalumeau";
+  		}
+	}
+
+	function nameOfNote(){
+		if (container == 1 || container == 13 || container == 25 || container == 37){
+			noteName.innerHTML = "E Flat / D Sharp";
+		}
+		if (container == 2 || container == 14 || container == 26 || container == 38){
+			noteName.innerHTML = "E Natural / F Flat";
+		}
+		if (container == 3 || container == 15 || container == 27 || container == 39){
+			noteName.innerHTML = "F Natural / E Sharp";
+		}
+		if (container == 4 || container == 16 || container == 28 || container == 40){
+			noteName.innerHTML = "G Flat / F Sharp";
+		}
+		if (container == 5 || container == 17 || container == 29 || container == 41){
+			noteName.innerHTML = "G Natural";
+		}
+		if (container == 6 || container == 18 || container == 30){
+			noteName.innerHTML = "A Flat / G Sharp";
+		}
+		if (container == 7 || container == 19 || container == 31){
+			noteName.innerHTML = "A Natural";
+		}
+		if (container == 8 || container == 20 || container == 32){
+			noteName.innerHTML = "B Flat / A Sharp";
+		}
+		if (container == 9 || container == 21 || container == 33){
+			noteName.innerHTML = "B Natural / C Flat";
+		}
+		if (container == 10 || container == 22 || container == 34){
+			noteName.innerHTML = "C Natural / B Sharp";
+		}
+		if (container == 11 || container == 23 || container == 35){
+			noteName.innerHTML = "D Flat / C Sharp";
+		}
+		if (container == 12 || container == 24 || container == 36){
+			noteName.innerHTML = "D Natural";
+		}
+
+	}
+	
+	altdown.onclick = function(){
+		if (altclick != "") {
+			altclick--;
+			alt = "_" + altclick;
+			if (alt = "_0"){
+				alt = "";
+			}
+			console.log(alt);
+			changeImage.src="H:/Tech Inno/Webpages/Fingerings/BC_"+(slider.value)+(alt)+".png";
+		}
+	}
+	
+	upArrow.onclick = function() {
+		if (container <= 40) {
+			container++;
+  		}
+		slider.value = container;
+		changeImage.src="H:/Tech Inno/Webpages/Fingerings/BC_"+(slider.value)+".png";
+  		noteImage.src="H:/Tech Inno/Webpages/Notes/BC_"+(slider.value)+".png";
+		registerName();
+		nameOfNote();
+	}
+
+	downArrow.onclick = function() {
+		if (container >= 1) {
+			container--;
+  		}
+		slider.value = container;
+		changeImage.src="H:/Tech Inno/Webpages/Fingerings/BC_"+(slider.value)+".png";
+  		noteImage.src="H:/Tech Inno/Webpages/Notes/BC_"+(slider.value)+".png";
+		registerName();
+		nameOfNote();
+	}
+
+	slider.oninput = function() {
+  		changeImage.src="H:/Tech Inno/Webpages/Fingerings/BC_"+(slider.value)+".png";
+  		noteImage.src="H:/Tech Inno/Webpages/Notes/BC_"+(slider.value)+".png";
+  		container = slider.value;
+  		registerName();
+		nameOfNote();
+	}
+
+
+
+</script>
+
+
+
+
+</body>
+
+</html>
+
+<!-- 
+	Pink = #ef3c64
+	Orange = #fdb515
+	Gray = #e5e7e7
+	DarkGray = #cfcfcf 
+-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

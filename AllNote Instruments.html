@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Instruments</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+<style>
+	body {
+		font-family: "Lato", sans-serif;
+		--pink: #ef3c64;
+		--orange: #fdb515;
+		--gray: #e5e7e7;
+		--darkgray: #cfcfcf;
+		margin: 0px;
+		padding: 0px;
+	}
+	.navbarlogo {
+		background-color: #e5e7e7;
+		padding: 0px 0px 0px 0px;
+	}
+	.navbarswirl {
+		background-color: #e5e7e7;
+		padding: 0px 0px 0px 0px;
+	}
+	ul {
+		list-style-type: none;
+		margin: 0;
+		padding: 0px;
+		overflow: hidden;
+		background-color: var(--pink);
+	}
+	li {
+		float: left;
+	}
+	.navbuttons {
+		display: block;
+		padding: 23px 20px 23px 20px;
+		text-decoration: none;
+		color: black;
+		font-weight: 400;
+	}
+	.navbuttons:link {
+		background-color: var(--gray);
+	}
+	.navbuttons:hover {
+		background-color: var(--pink);
+	}
+	.navbuttons:active {
+		background-color: var(--orange);
+	}
+	#currentnav {
+		background-color: var(--darkgray);
+	}
+	.center {
+		text-align: center;
+	}
+	.mainlogo {
+		width:230px;
+		margin-top: 5%;
+	}
+	h2 {
+		text-align: center;
+	}
+	.notdone img:hover {
+		cursor: not-allowed;
+		animation: notdone 0.2s 1;
+	}
+
+	
+	.done img {
+		transition: transform 150ms;
+	}
+	.done img:hover {
+		filter: drop-shadow(0px 5px 4px var(--darkgray));
+		position: relative; 
+		/** top: -5px; **/
+
+		transform: translateY(-5px);
+	} 
+
+
+	@keyframes notdone {
+  		0% { transform: translate(5px, 0px) rotate(0deg); }
+  		50% { transform: translate(-5px, 0px) rotate(0deg); }
+  		100% { transform: translate(0px, 0px) rotate(0deg); }
+	}
+
+	.firstrow {
+		text-align: center;
+		padding-top: 15px;
+		padding-bottom: 15px;
+	}
+	.secondrow {
+		text-align: center;
+		padding-top: 15px;
+		padding-bottom: 15px;
+	}
+	.thirdrow {
+		text-align: center;
+		padding-top: 15px;
+		padding-bottom: 15px;
+	}
+
+	.margin {
+		margin-right: 30px;
+	}
+	.select {
+		width: 100px;
+	}
+		
+</style>
+</head>
+
+<body>
+<ul>
+	<li><a class="navbarlogo" href="H:\Tech Inno\Webpages\AllNote Homepage.html"><img src="H:\Tech Inno\Webpages\images\AllNote_Logo_BG.png" width="110" alt="AllNote Logo"></a></li>
+	<li><a class="navbuttons" id="currentnav" href="H:\Tech Inno\Webpages\AllNote Instruments.html">Instruments</a></li>
+	<li><a class="navbuttons" href="H:\Tech Inno\Webpages\AllNote About.html">About</a></li>
+	<li><img class="navbarswirl" src="H:\Tech Inno\Webpages\images\AllNote_Swirl.png" height="61px"></li>
+</ul>
+<br>
+<div class="center"><img class="mainlogo" src="H:\Tech Inno\Webpages\images\AllNote_Logo.png" alt="AllNote Logo"></div>
+<h2>Choose an Instrument:</h2>
+<br>
+
+<div class="firstrow">
+<a href="H:\Tech Inno\Webpages\AllNote Bass.html" class="select done margin"><img src="H:\Tech Inno\Webpages\images\BassClarinetSelect.png" style="width: 100px"></a>
+<a href="#" class="notdone"><img src="H:\Tech Inno\Webpages\images\ClarinetSelect.png" style="width:100px"></a>
+</div>
+
+<div class="secondrow">
+<a href="#" class="notdone margin"><img src="H:\Tech Inno\Webpages\images\BassoonSelect.png" style="width:100px"></a>
+<a href="#" class="notdone"><img src="H:\Tech Inno\Webpages\images\OboeSelect.png" style="width:100px"></a>
+</div>
+
+<div class="thirdrow">
+<a href="#" class="notdone margin"><img src="H:\Tech Inno\Webpages\images\SaxSelect.png" style="width:100px"></a>
+<a href="#" class="notdone"><img src="H:\Tech Inno\Webpages\images\FluteSelect.png" style="width:100px"></a>
+</div>
+
+</body>
+
+</html>
+
+<!-- 
+	Pink = #ef3c64
+	Orange = #fdb515
+	Gray = #e5e7e7
+	DarkGray = #cfcfcf 
+-->
+
+
+
+
+
+
+
+
+
+
+
+
