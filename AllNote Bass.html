@@ -306,7 +306,7 @@
 <div class="downbuttondiv center"><button type="button" class="arrowbutton" id="down"><div class="downarrow"></div></button></div>	
 
 
-<div class="notepadding center"><img class="fingering" id="noteImage" src="BC_1.png" width="250px"></div>
+<div class="notepadding center"><img class="fingering" id="noteImage" src="NBC_1.png" width="250px"></div>
 
 <p id="notename"> E Flat / D Sharp </p>
 <p id="register"> Chalumeau </p>
@@ -440,7 +440,7 @@
   		}
 		slider.value = container;
 		changeImage.src="BC_"+(slider.value)+".png";
-  		noteImage.src="BC_"+(slider.value)+".png";
+  		noteImage.src="NBC_"+(slider.value)+".png";
 		registerName();
 		nameOfNote();
 	}
@@ -451,14 +451,14 @@
   		}
 		slider.value = container;
 		changeImage.src="BC_"+(slider.value)+".png";
-  		noteImage.src="BC_"+(slider.value)+".png";
+  		noteImage.src="NBC_"+(slider.value)+".png";
 		registerName();
 		nameOfNote();
 	}
 
 	slider.oninput = function() {
   		changeImage.src="BC_"+(slider.value)+".png";
-  		noteImage.src="BC_"+(slider.value)+".png";
+  		noteImage.src="NBC_"+(slider.value)+".png";
   		container = slider.value;
   		registerName();
 		nameOfNote();
